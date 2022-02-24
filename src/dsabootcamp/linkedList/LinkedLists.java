@@ -14,14 +14,8 @@ public class LinkedLists {
     void insertFirst(int val)
     {
         Node node = new Node(val);
-        System.out.println("node : "+ node);
-        System.out.println("node.next : "+ node.next);
         node.next = head;
-        System.out.println("after initialise node.next : "+node.next);
-
         head= node;
-        System.out.println("Head : "+  head);
-        System.out.println("Still pointing : " +node.next); // still it will point previous node
         if(tail == null)
         {
             tail = head;
