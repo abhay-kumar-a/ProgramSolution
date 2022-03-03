@@ -7,6 +7,23 @@ public class Main extends Car {
         car.stop();
         car.accelerate();
         car.brake();
+        // we also can object of interface with all that's methods
+        Engine e = new Engine() {
+            @Override
+            public void start() {
+
+            }
+
+            @Override
+            public void stop() {
+
+            }
+
+            @Override
+            public void accelerate() {
+
+            }
+        };
 
         Media media = new Car();
         {

@@ -23,6 +23,7 @@ class B {  // Inner Class , How to use it;
     public class InnerClasses {
       int a =7;
       static String newName = "Gulsion";
+      A refOfA ;
         static class A {  // here class A depends on Inner class          // ..........rule1
 
             static String name; // static var means its value will be same for all objects ,  //.............. rule_2
@@ -50,10 +51,13 @@ class B {  // Inner Class , How to use it;
 
         }
         public static void main(String[] args) {
+//            InnerClasses n = new InnerClasses();
             A a = new A("Abhay","Abhay"); //
             A a1 = new A("Vivek","Vivek");
             System.out.println(newName);
             InnerClasses innerClasses = new InnerClasses();
+            innerClasses.refOfA= a;
+            System.out.println("attach innerclass ref and A ref: "+ innerClasses.refOfA);
             System.out.println(innerClasses.a);
 
             // .................. rule_1 ...........

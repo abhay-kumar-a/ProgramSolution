@@ -1,5 +1,5 @@
 package dsabootcamp.opps.interfaces;
-
+// we use implement keyword for access property of interface in class , access property of one interface to another interface we use extend keyword
 public class Car implements Brake,Engine,Media{
 
     @Override

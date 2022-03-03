@@ -1,6 +1,7 @@
 package dsabootcamp.opps.abstractDemo;
 
 public class Son extends Parents{
+//    int age = 9;
     Son(int age) {
         super(age);
     }

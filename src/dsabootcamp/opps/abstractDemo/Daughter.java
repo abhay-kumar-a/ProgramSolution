@@ -1,5 +1,6 @@
 package dsabootcamp.opps.abstractDemo;
 
+// a class can extend abstract method
 public class Daughter extends Parents {
     int age=23;
     Daughter(int age) {
