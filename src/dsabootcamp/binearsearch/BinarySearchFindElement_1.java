@@ -1,6 +1,7 @@
 package dsabootcamp.binearsearch;
 // binary search work with sorted array it will be ascending  or descending order
 // It search element and return element position
+
 public class BinarySearchFindElement_1 {
     public static void main(String[] args) {
         int[] arr = {-34,-11,-3,-1,0,2,4,5,6,8,9,11,34};
@@ -15,6 +16,9 @@ public class BinarySearchFindElement_1 {
         while(start<=end)
         {
             int mid  = start+(end-start)/2;
+//            int mid = start + (end - start )/2;
+//            is equal to int mid = (start + end )/2;
+//            its a better approach to prevent integer overflow .
             if(target>arr[mid]) // go left side
             {
                 start = mid+1;

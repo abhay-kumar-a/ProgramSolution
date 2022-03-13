@@ -1,6 +1,6 @@
 package dsabootcamp.binearsearch;
 
-public class practice {
+public class practice1 {
     public static void main(String[] args) {
         int[] arr= {1,2,5,4,7};
         int a = missingNumber(arr);

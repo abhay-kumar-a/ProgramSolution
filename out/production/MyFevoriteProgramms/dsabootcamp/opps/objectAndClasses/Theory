@@ -1,0 +1,96 @@
+Objects and Classes in Java
+1> Object in Java
+2> Class in Java
+3> Instance Variable in Java
+4> Method in Java
+5> Example of Object and class that maintains the records of student
+6> Anonymous Object
+
+we will learn about Java objects and classes.
+In object-oriented programming technique, we design a program using objects and classes.
+
+Object and Java
+An object in Java is the physical as well as a logical entity, whereas, a class in Java is a logical entity only.
+
+.....................Object...............
+What is an object in Java
+object in Java:
+An entity that has state and behavior is known as an object e.g., chair, bike, marker, pen, table, car, etc.
+It can be physical or logical (tangible and intangible). The example of an intangible object is the banking system.
+
+An object has three characteristics:
+State: represents the data (value) of an object.
+Behavior: represents the behavior (functionality) of an object such as deposit, withdraw, etc.
+Identity: An object identity is typically implemented via a unique ID. The value of the ID is not visible to the external user.
+However, it is used internally by the JVM to identify each object uniquely.
+
+For Example, Pen is an object. Its name is Reynolds; color is white, known as its state. It is used to write, so writing is its behavior.
+
+An object is an instance of a class. A class is a template or blueprint from which objects are created. So, an object is the instance(result) of a class.
+
+............................Classes ............................
+
+A class is a group of objects which have common properties.
+It is a template or blueprint from which objects are created.
+ It is a logical entity. It can't be physical.
+
+A class in Java can contain:
+Fields
+Methods
+Constructors
+Blocks
+Nested class and interface
+
+..................Method..................
+In general, a method is a way to perform some task.
+Similarly, the method in Java is a collection of instructions that performs a specific task.
+ It provides the reusability of code. We can also easily modify code using methods.
+
+
+
+...................Constructor.............
+In Java, a constructor is a block of codes similar to the method.
+ It is called when an instance of the class is created.
+ At the time of calling constructor, memory for the object is allocated in the memory.
+
+ ........... static ...................
+
+ The static keyword in Java is used for memory management mainly.
+ We can apply static keyword with variables, methods, blocks and nested classes.
+ The static keyword belongs to the class than an instance of the class.
+
+ The static can be:
+
+ Variable (also known as a class variable)
+ Method (also known as a class method)
+ Block
+ Nested class
+
+ ..................This keyword.................
+ There can be a lot of usage of Java this keyword. In Java, this is a reference variable that refers to the current object.
+
+ use of this
+
+ this can be used to refer current class instance variable.
+this can be used to invoke current class method (implicitly)
+this() can be used to invoke current class constructor.
+this can be passed as an argument in the method call.
+this can be passed as argument in the constructor call.
+this can be used to return the current class instance from the method.
+
+ ............ super Keyword.......................
+The super keyword in Java is a reference variable which is used to refer immediate parent class object.
+
+Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by super reference variable.
+
+Usage of Java super Keyword
+super can be used to refer immediate parent class instance variable.
+super can be used to invoke immediate parent class method.
+super() can be used to invoke immediate parent class constructor.
+
+.................. final keyword......................
+The final keyword in java is used to restrict the user. The java final keyword can be used in many context.
+Final can be:
+    variable
+    method
+    class

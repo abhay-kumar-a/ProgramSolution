@@ -1,8 +1,9 @@
 package dsabootcamp.opps.exceptionHandling;
 
+// keyword used in exception Handling
 // try: the "try" keyword used to specify a block where we should place an exception code, we cont make try block alone , the try block must follow
  //    by either catch or finally
-// Catch : the catch block is used to handle exception , we can't use catch block alone , try much be place at above
+// Catch : the catch block is used to handle exception , we can't use catch block alone , try must be place at above
 //  Finally : The final block is used to execute necessary block // it will whether an exception will occur, handle  or not
 // throw: The throw keyword is used to throw an exception // itself , we can create out exception
 // throws: The throws' keyword is used to declare  exception . it specifies that there may be occurred an exception , it always used with method signature ;
@@ -51,7 +52,7 @@ public class ExceptionHandling {
     static int divide(int a , int b) throws Exception {
         if(b==0)
         {
-            throw  new ArithmeticException("please do not divide by zero");  /// for use of throw , need to attach throws Exception in method
+            throw  new ArithmeticException("please do not divide by zero");  /// for use of throw , need to attach throws Exception  with method signature
                                                                                 // self created exception on;
         }
         return a/b;

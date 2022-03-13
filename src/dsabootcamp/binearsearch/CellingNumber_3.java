@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class CellingNumber_3 {
     public static void main(String[] args) {
         Integer[] arr = {2, 3, 5, 9, 14, 16, 18};
-        int target = 15;
+        int target = 20;
         System.out.println("Index of given number in the array:  "+ Arrays.asList(arr).indexOf(target));
         System.out.println("Celling Number is : " + BinarySearch(arr,target));
     }

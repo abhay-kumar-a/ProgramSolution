@@ -8,6 +8,12 @@ public class CustomArrayList {
     private int[] data;
     private  int size;
     static int DEFAULT_SIZE = 5;
+//    void methods()
+//    {
+//        System.out.println(size);
+//        System.out.println(size++);
+//        System.out.println(size);
+//    }
     CustomArrayList()
     {
         this.data = new int[DEFAULT_SIZE];
@@ -19,6 +25,11 @@ public class CustomArrayList {
             resize();
         }
         data[size++]=num;
+    }
+    void addLast(int value)
+    {
+        data[size]= value;
+        size++;
     }
      void resize()
     {
@@ -37,7 +48,51 @@ public class CustomArrayList {
         return size == data.length;
     }
 
-    void remove(int index)             /// remove element from at any index
+    int removeFirst()
+    {
+        int deleteValue=data[0];
+        int[] temp = new int[DEFAULT_SIZE];
+        for(int i = 0;i<size-1;i++)
+        {
+            temp[i] = data[i+1];
+        }
+        data=temp;
+        size--;
+        return deleteValue;
+    }
+
+    int removeLast()
+    {
+        int deleteValue = data[size-1];
+        int[] temp = new int[DEFAULT_SIZE];
+        for(int i = 0;i<size-1;i++)
+        {
+            temp[i] = data[i];
+        }
+        data = temp;
+        size--;
+        return deleteValue;
+    }
+    void addAtIndex(int index,int value)
+    {
+        int[] temp = new int[DEFAULT_SIZE];
+
+        for(int i = 0 ;i<index;i++) {   // copy element of data arr before index
+
+            temp[i] = data[i];
+          }
+        temp[index] = value;   // add element at index
+
+        size++;
+            for(int  i = index ;i<size;i++)  // copy element of data arr after index
+            {
+                temp[i+1]=data[i];
+            }
+//        size++; v
+        data=temp;  //  give access of temp  to data;
+
+    }
+    void removeAtIndex(int index)             /// remove element from at any index
     {
         int[] temp = new int[data.length];
         for(int i = 0,k=0;i<data.length;i++)
@@ -62,6 +117,8 @@ public class CustomArrayList {
     {
         data[index]=value;
     }
+
+
     @Override
     public String toString() {         // override toString Method
         return "CustomArrayList{" +
@@ -73,17 +130,20 @@ public class CustomArrayList {
 
     public static void main(String[] args) {
         CustomArrayList arrayList = new CustomArrayList();
-           for (int i = 0;i<6;i++)
+           for (int i = 1;i<=6;i++)
              {
                    arrayList.add(i);
              }
         System.out.println(arrayList);
-        arrayList.remove(3);
+        System.out.println(arrayList.removeFirst());
         System.out.println(arrayList);
-        System.out.println(arrayList.get(4));
-        System.out.println(arrayList.size);
-        arrayList.set(4,34);
-        System.out.println("set value is "+ arrayList);
+
+//        arrayList.remove(3);
+//        System.out.println(arrayList);
+//        System.out.println(arrayList.get(4));
+//        System.out.println(arrayList.size);
+//        arrayList.set(4,34);
+//        System.out.println("set value is "+ arrayList);
 
     }
 }
