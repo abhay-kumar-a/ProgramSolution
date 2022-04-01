@@ -1,6 +1,7 @@
 package dsabootcamp.linkedList;
 
 public class DoublyLinkedList {
+
     Node head;
     int size;
     DoublyLinkedList()
@@ -78,6 +79,16 @@ public class DoublyLinkedList {
         {
             head.next.prev = null;
             head=head.next;
+        }
+        return val;
+    }
+    int deleteFirst1()
+    {
+        int val = head.val;
+        if(head!= null)
+        {
+            head= head.next;
+            head.prev=null;
         }
         return val;
     }

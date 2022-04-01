@@ -7,7 +7,9 @@ import java.util.List;
 public class AllDisappearNumber {
     public static void main(String[] args) {
         int[] arr = {4, 3, 2, 7, 8, 2, 3, 1};
+        System.out.println("Actual array: "+ Arrays.toString(arr));
         List<Integer> ans = allDisappearNumber(arr);
+        System.out.println("Sorted array : " +Arrays.toString(arr));
         System.out.println(ans);
     }
 

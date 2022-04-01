@@ -6,28 +6,28 @@ public class Main {
 
         // singly LinkedList
       LinkedLists l = new LinkedLists();
-//        System.out.println(l.size);
-//        l.insertFirst(5);
-//        l.insertFirst(6);
-//        l.insertFirst(7);
-//        l.display();
-//        l.insertAtPosition(23, 2);
-//        l.display();
-//        l.insertLast(4535);
-//        l.display();
-//        l.insertAtPosition(44,2);
-//        l.display();
+        System.out.println(l.size);
+        l.insertFirst(5);
+        l.insertFirst(6);
+        l.insertFirst(7);
+        l.display();
+        l.insertAtPosition(23, 2);
+        l.display();
+        l.insertLast(4535);
+        l.display();
+        l.insertAtPosition(44,2);
+        l.display();
 //        System.out.println(l.deleteStart());
 ////        l.deleteStart();
 //        l.display();
 ////        l.deleteLast();
-   //    System.out.println(l.deleteLast());
+//       System.out.println(l.deleteLast());
 //        l.display();
 //        System.out.println(l.deleteAtIndex(2));
 //        l.display();
-//        System.out.println("Reference is : "+ l.findNode(6));
+        System.out.println("Reference is : "+ l.findNode(6));
 
-        // Doubly LinkedList
+       //  Doubly LinkedList
         DoublyLinkedList d = new DoublyLinkedList();
 //        d.insertFirst(4);
 //        d.insertFirst(1);
@@ -49,12 +49,12 @@ public class Main {
 //      d.display();
 
       // Circular Linked List
-      CircularLinkedList list = new CircularLinkedList();
-      list.insertFirst(45);
-      list.insertFirst(4);
-      list.insertFirst(455);
-      list.insertFirst(6);
-      list.display();
+//      CircularLinkedList list = new CircularLinkedList();
+//      list.insertFirst(45);
+//      list.insertFirst(4);
+//      list.insertFirst(455);
+//      list.insertFirst(6);
+//      list.display();
 
     }
 }

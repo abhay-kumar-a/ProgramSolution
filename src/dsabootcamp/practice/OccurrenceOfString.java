@@ -8,8 +8,9 @@ import java.util.Arrays;
 public class OccurrenceOfString {
     public static void main(String[] args) throws IOException {
         BufferedReader r = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter String: ");
+        System.out.println("Enter String:");
         String name = r.readLine();
+//        System.out.println((char)65);
 //        System.out.println(Arrays.toString(name));
 //        char[] stringArr = name.toCharArray();
 //        int[] newArray = new int[stringArr.length];
@@ -21,8 +22,15 @@ public class OccurrenceOfString {
 //        System.out.println(Arrays.toString(stringArr));
 //        System.out.println((int)stringArr[0]);
 //        StringOccurrenceFind(stringArr);
-        stringToArray(name);
+//        stringToArray(name);
+        OccurrenceOfString s1 = new OccurrenceOfString();
+        s1.sortString(name);
     }
+    void sortString(String stringName)
+    {
+        stringToArray(stringName);
+    }
+
 
     static void stringToArray(String name)
     {

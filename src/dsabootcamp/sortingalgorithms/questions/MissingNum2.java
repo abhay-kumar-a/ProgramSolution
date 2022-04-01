@@ -4,8 +4,10 @@ import java.util.Arrays;
 
 public class MissingNum2 {
     public static void main(String[] args) {
-        int[] arr = {2,2};
+        int[] arr = {3,0,1};
+
         int index =  missingNumber(arr);
+        System.out.println("Sorted array :"+ Arrays.toString(arr));
         System.out.println(index);
 
     }

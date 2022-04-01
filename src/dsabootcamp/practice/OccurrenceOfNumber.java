@@ -14,7 +14,7 @@ public class OccurrenceOfNumber {
         int count =1;
 //        Arrays.sort(arr);
         sortArray(arr);
-        System.out.println("Occurence : \n"+ Arrays.toString(arr));
+        System.out.println("MaxCharOccurrenceInString : \n"+ Arrays.toString(arr));
         for(int i = 0;i<arr.length;)
         {
             count=1;

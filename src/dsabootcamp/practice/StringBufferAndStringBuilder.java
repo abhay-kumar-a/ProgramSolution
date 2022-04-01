@@ -6,16 +6,17 @@ import java.util.Arrays;
 
 public class StringBufferAndStringBuilder {
     public static void main(String[] args) {
-//        stringBuilderMethod();
+//        StringBuilderMethod();
 //        timeCheck();
         stringBufferMethod();
     }
 
         static void StringBuilderMethod() {
             StringBuilder b = new StringBuilder(new String("JElodlk"));   /// class
+            StringBuilder b2= new StringBuilder();
             b.append(" " + 34);
             b.append(" " + 332);
-            System.out.println();
+            System.out.println(b);
             String b1 = b + "";
             System.out.println("ref b value is : " + b1);
             String[] a1 = b1.split(" ");
@@ -41,7 +42,16 @@ public class StringBufferAndStringBuilder {
                 b.append(342+ "\n");
                 b.append("NumberFirst : ").append(34+"\n");
                 b.append("NumberSecond : ").append(345);
-                System.out.println(b+"Hello");
+                System.out.println(b);
+                String s1 = b+"Abhay";
+                String[] ar = s1.split(" ");
+                System.out.println("Array is : ");
+                for (int i = 0;i<ar.length;i++)
+                {
+                    System.out.println(ar[i]);
+                }
+                System.out.println(ar[1]);
+//                System.out.println(Arrays.toString(ar) + "Abhay");
 
             }
 
@@ -70,3 +80,17 @@ public class StringBufferAndStringBuilder {
 
     }
 }
+
+// output
+// string Builder
+/*JElodlk 34 332
+        ref b value is : JElodlk 34 332
+        print is array : [JElodlk, 34, 332]
+        Hello abhay abhay abhay abhay abhay
+        [Hello, abhay, abhay, abhay, abhay, abhay]
+        Hello
+        [Hello, abhay, abhay, abhay, abhay, abhay] */
+// String Buffer
+/*ZeroIndex : 342
+        NumberFirst : 34
+        NumberSecond : 345Hello*/
