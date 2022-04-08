@@ -11,5 +11,5 @@ public class ResetIthBit {
     static int resetIthBit(int num , int ithBit)
     {
         return num & ~(1<<(ithBit-1));
-    }s
+    }
 }

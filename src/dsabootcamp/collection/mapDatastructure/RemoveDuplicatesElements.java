@@ -7,7 +7,6 @@ public class RemoveDuplicatesElements {
     public static void main(String[] args) {
         String str = "SILLYSPIDER";
         removeDuplicates(str);
-
     }
     static void removeDuplicates(String str)
     {

@@ -6,13 +6,13 @@ import java.util.Collection;
 
 public class ExpectedSumPairsFind {
     public static void main(String[] args) {
-        int[] arr1 = {1,1,1,1,1,};
+        int[] arr1 = {1,3,1,1,4,};
         System.out.println("First array: "+ Arrays.toString(arr1));
 
         selectionSort(arr1);
 //        System.out.println(Arrays.toString(arr1));
         int[] newArr1 = removeDuplicate(arr1);
-        int[] arr2 = {4,4,4,4,4};
+        int[] arr2 = {4,4,2,4,1};
         System.out.println("Second array: "+ Arrays.toString(arr2));
 
         selectionSort(arr2);

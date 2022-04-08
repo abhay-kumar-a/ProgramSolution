@@ -2,12 +2,12 @@ package dsabootcamp.arrays;
 // missing number for 1 to n array and , no, any duplicate available
 public class MissingNumber {
     public static void main(String[] args) {
-        int [] arr = {1,2,4,6,3,7,8};
+        int [] arr = {0,1,3,5};
         int a = missingNumber3(arr);
         System.out.println(a);
 //        System.out.println(arr.length);
     }
-    static int missingNumber(int[] arr)  // for 1 to n array
+    static int missingNumber(int[] arr)  // for 1 to n array   // wrong
     {
         for( int i = 0;i<arr.length-1;i++)
         {
@@ -23,7 +23,7 @@ public class MissingNumber {
         }
         return -1;
     }
-    static int missingNumber2(int[] arr)  // for 0 to n array
+    static int missingNumber2(int[] arr)  // for 0 to n array  // wrong
     {
         for( int i = 0;i<arr.length;i++)
         {
@@ -39,13 +39,13 @@ public class MissingNumber {
         return -1;
     }
     // brute force solution using two for loop
-    static  int missingNumber3(int[] arr)
+    static  int missingNumber3(int[] arr)  // right...
     {
         int i,found=0;
-         for( i = 1;i<=arr.length;i++)
+         for( i = 0;i<=arr.length;i++)   // use for index
          {
              found = 0;
-             for(int j = 0;j<arr.length;j++)
+             for(int j = 0;j<arr.length;j++)  // use for value...
              {
                  if(arr[j] == i)
                  {

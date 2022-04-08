@@ -19,7 +19,8 @@ public class LambdaFunction {
         for (int i = 0; i < 5; i++) {
             arr.add(i + 1);
         }
-//       arr.forEach((item) -> System.out.println(item*2));  // this item take element for arr one by one and print it //  it is of consumer type variable so also can store in consumer
+      arr.forEach((item) -> System.out.println(item*2));  // this item take element for arr one by one and print it //
+//       it is of consumer type variable so also can store in consumer
 //        // containing parameter      //this is body of loop
         Consumer<Integer> fun = (item) -> System.out.println(item * 2);
         arr.forEach(fun);

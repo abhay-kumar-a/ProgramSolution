@@ -7,15 +7,15 @@ public class ArrayLists<I extends Number> {
     public static void main(String[] args) {
         Scanner sc  = new Scanner(System.in);
         /// single array list
-        ArrayList arrayList = new ArrayList(5);
+        ArrayList<Integer> arrayList = new ArrayList<>(5);  // here if we use object lin generic type then for use get() method , we need to type cast it as '(Integer) get()' like that
         System.out.println(arrayList);
         for(int i = 0; i<5;i++)
         {
             arrayList.add(i);
         }
-        for(Object num:arrayList)
+        for(Integer num:arrayList)
         {
-            System.out.println(arrayList.get((Integer) num)); // getMethod used
+            System.out.println(arrayList.get( num)); // getMethod used
         }
         System.out.println(arrayList); /// automatic print in format [0,1,2,3,4]
         // for get element from array
