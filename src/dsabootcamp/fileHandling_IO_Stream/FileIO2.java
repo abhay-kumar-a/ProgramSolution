@@ -30,6 +30,9 @@ getAndSetFileIO();
             int i =0;
             while((i = fileInputStream.read()) != -1)
             {
+//               char b = (char) i; // convert i into char
+//                System.out.println(b);// print this..\
+
                 fileOutputStream.write(i);
             }
         }catch (IOException e){e.printStackTrace();}

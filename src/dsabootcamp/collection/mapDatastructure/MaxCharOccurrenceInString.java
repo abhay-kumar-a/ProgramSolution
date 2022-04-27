@@ -9,7 +9,7 @@ import java.util.Map;
 public class MaxCharOccurrenceInString {
     public static void main(String[] args) {
 
-        String str = "bbbcccaa";
+        String str = "bbbccccaa";
         MaxCharOccurrenceInString m = new MaxCharOccurrenceInString();
         m.getMaxOccurrenceOfCharacterInString(str);
     }

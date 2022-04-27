@@ -31,9 +31,9 @@ p.getKeyAndValueForLoop(s);
 
          // for access data from map
          // also apply for each loop;
-         for( Map.Entry entry  : map.entrySet())
+         for( Map.Entry<Character,Integer> entry  : map.entrySet())
          {
-             System.out.println(entry.getKey() + " " + entry.getValue() );
+             System.out.println(entry.getKey() + " " + entry.getValue());
          }
      }
      void getKeyAndValueForLoop(String str)
@@ -52,7 +52,7 @@ p.getKeyAndValueForLoop(s);
              }
          }
          // for loop for assess data from HashMap;
-         for (Map.Entry  entry : map.entrySet())
+         for (Map.Entry<Character,Integer>  entry : map.entrySet())
          {
              System.out.println(entry.getKey() + " " + entry.getValue());
          }

@@ -1,6 +1,4 @@
-package dsabootcamp.opps.generics;
-
-import dsabootcamp.arrays.ArrayLists;
+package dsabootcamp.customImplementationOfLinearDataStructure.arrayList;
 
 import java.util.Arrays;
 
@@ -13,7 +11,7 @@ public class CustomArrayList {
 //        System.out.println(size);
 //        System.out.println(size++);
 //        System.out.println(size);
-//    }
+//    } 
     CustomArrayList()
     {
         this.data = new int[DEFAULT_SIZE];

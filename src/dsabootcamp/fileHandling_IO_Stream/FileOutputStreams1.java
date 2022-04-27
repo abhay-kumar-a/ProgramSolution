@@ -9,20 +9,20 @@ public class FileOutputStreams1 {
 
         try{
             FileOutputStream f = new FileOutputStream("F:\\ImportantSubject\\FileInJava\\Abhay.txt");
-//            for(int i =0 ;i<=257;i++) {
-//                System.out.println(i);
-//                f.write(i);
-////                f.write(32);
+            for(int i =0 ;i<=257;i++) {
+                System.out.println(i);
+                f.write(i);
+//                f.write(32);
 //                // write method take byte and sing by as well as array byte. we can't pass any other data type over here.
 //                /// here it converts automatic int into byte and store in java
-//            }
+          }
             f.write(0);
             f.write(255);
             f.write(256);
             f.write(257);
 
-            String s ="+ Hello my name is Abhay";
-            byte[] b = s.getBytes();
+            String s ="+ Hello my name is Abhay";  // we also can store String in file
+            byte[] b = s.getBytes(); // here we convert string into byte.... using getBytes() method...
 //            f.write(b);
                 System.out.println("byte are: " + Arrays.toString(b));
             /// add string in file
