@@ -45,7 +45,8 @@ public class ExceptionHandling {
             System.out.println("It always be executed , no matter exception will occur or not , Execute necessary code ");
         }
 
-       divide(a,b);
+        int b1=9;
+        System.out.println( divide(a,b));
 
     }
     // creating static method

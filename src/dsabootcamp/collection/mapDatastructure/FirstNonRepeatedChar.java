@@ -1,6 +1,4 @@
 package dsabootcamp.collection.mapDatastructure;
-
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -14,7 +12,7 @@ public class FirstNonRepeatedChar {
     void getFirstNotRepeatedChar (String str)
     {
         char[] arr = str.toCharArray();
-        HashMap<Character,Integer> map = new LinkedHashMap<>();
+        Map<Character,Integer> map = new LinkedHashMap<>();
         for(char c : arr)
         {
             if(map.containsKey(c))

@@ -9,7 +9,7 @@ public class CharCount {
         System.out.print("Enter String : ");
         String s = sc.nextLine();
         s=s.replaceAll("\\s","");
-        s =s.toLowerCase();
+       // s =s.toLowerCase();
         System.out.println();
         int l = s.length();;
         int[] count = new int[256];

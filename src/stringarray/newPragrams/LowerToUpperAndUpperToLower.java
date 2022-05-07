@@ -6,6 +6,10 @@ public class LowerToUpperAndUpperToLower {
     public static void main(String[] args) {
         LowerToUpperAndUpperToLower l = new LowerToUpperAndUpperToLower();
 //        System.out.println(l.lowerCaseToUppercase("abhay"));
+        System.out.println((int)'a');
+        System.out.println((int)'0');
+        System.out.println((int)' ');
+        System.out.println((char) 64);
        l.upperCaseToLowerCase("ABHAY KUMAR");
        l.firstLetterCapital("abhay kumar where are you going and why do you to make some essential topic like data structure not make any content");
        l.firstLetterLower("ABHAY KUMAR BHAI");

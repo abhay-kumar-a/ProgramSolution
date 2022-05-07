@@ -1,6 +1,6 @@
 package dsabootcamp.opps;
 // Wrapper classes in java provide a mechanism to convert primitive into objects and objects into primitive;
-public class WrapperClasses {
+final public class WrapperClasses {
     /// why is  wrapper classes and why use it ;
 
     // we can't swap primitive data types
@@ -46,13 +46,12 @@ public class WrapperClasses {
         System.out.println("a : "+ a +"\n" + "b : "+b);
     }
 }
-class  A {
-    final  int num = 45;
+  final class  A {
+    final int num = 45;
     int a =4;
     String name;
     A(String name)
     {
         this.name = name;
     }
-
 }

@@ -35,7 +35,7 @@ public class CustomArrayList {
         data[size]= value;
         size++;
     }
-     void resize()
+    void resize()
     {
         DEFAULT_SIZE=DEFAULT_SIZE*2;
      int[] temp  = new int[DEFAULT_SIZE];

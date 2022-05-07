@@ -48,7 +48,7 @@ public class SetInterfaceExamples {
 
         Set set4 = Set.of();   // with zero parameter
         Set<String> set5 = Set.<String>of(); //  provide as a generic type...
-       Set<String>  set6 = Set.<String>of("Val1" ,"Val2" , "Val3");
+        Set<String>  set6 = Set.<String>of("Val1" ,"Val2" , "Val3");
         System.out.println("Element of set6 is : "+ set6);  // same behave like a hashSet..
 
 

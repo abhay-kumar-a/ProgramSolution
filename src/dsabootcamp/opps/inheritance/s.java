@@ -18,7 +18,7 @@ public class s {
 
     for (int i =0;i<b.length() || i<a.length();i++)
     {
-        System.out.println(String.valueOf(c1[i])+String.valueOf(c2[i]));
+        System.out.println(String.valueOf(c2[i]));
     }
     }
 }
