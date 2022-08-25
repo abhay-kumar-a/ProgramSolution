@@ -9,10 +9,10 @@ public class ThrowConcepts {
     {
         if(age<18)
         {
-            throw  new ArithmeticException("Person is not eligible to work");
+            throw  new ArithmeticException("Question2 is not eligible to work");
         }
         else {
-            System.out.println("Person id Eligible to vote");
+            System.out.println("Question2 id Eligible to vote");
         }
     }
 

@@ -17,8 +17,8 @@ public class ExceptionHandling {
 
         try {
             // code that may throw and exception;
-//            int c= a/b;
-//            System.out.println(c);
+            int c= a/b;
+            System.out.println(c);
             String name = "Abhay";
             if(name.equals("Abhay"))
             {
@@ -31,21 +31,21 @@ public class ExceptionHandling {
             System.out.println(e.getMessage());
         }
 
-        catch (ArithmeticException e)  // Exception class have already Arithmetic subclass // it handles the Arithmetic exception and show as output
-        {//
-            System.out.println(e.getMessage());
-        }
-        catch (Exception e)   // here it will show an error :Exception 'java.lang.ArithmeticException' has already been caught in Exception class(if 1 catch will be here and Exception will be above)
-                                            // so more restrictive class will be above than less restrictive classes;
-        {
-            System.out.println("Normal Exception "+e.getMessage()); // /by zero // written in good manner// e.getMessage will get "yes, name is Abhay" from MyException
-        }
-
-        finally {  // optional
-            System.out.println("It always be executed , no matter exception will occur or not , Execute necessary code ");
-        }
-
-        int b1=9;
+//        catch (ArithmeticException e)  // Exception class have already Arithmetic subclass // it handles the Arithmetic exception and show as output
+//        {//
+//            System.out.println(e.getMessage());
+//        }
+//        catch (Exception e)   // here it will show an error :Exception 'java.lang.ArithmeticException' has already been caught in Exception class(if 1 catch will be here and Exception will be above)
+//                                            // so more restrictive class will be above than less restrictive classes;
+//        {
+//            System.out.println("Normal Exception "+e.getMessage()); // /by zero // written in good manner// e.getMessage will get "yes, name is Abhay" from MyException
+//        }
+//
+//        finally {  // optional
+//            System.out.println("It always be executed , no matter exception will occur or not , Execute necessary code ");
+//        }
+//
+//        int b1=9;
         System.out.println( divide(a,b));
 
     }

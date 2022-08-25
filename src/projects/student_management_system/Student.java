@@ -22,7 +22,7 @@ public class Student {
         System.out.println("Enter student last name : ");
         this.latName = sc.nextLine();
 
-        System.out.println("1 - Freshmen\n2 - Sophmore\n3 - junior\n4 -  Senior\nEnter student class level : ");
+        System.out.println("1 - First_year\n2 - Second_Year\n3 - Third_year\n4 -  Fourth_year\nEnter student Year level : ");
         this.gradeYear=sc.nextInt();
 
         setStudentID();

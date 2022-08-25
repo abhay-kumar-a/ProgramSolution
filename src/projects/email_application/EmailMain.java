@@ -14,7 +14,7 @@ public class EmailMain {
     private int mailboxCapacity = 500;
     private int defaultPasswordLength =10;
     private  String alternateEmail;
-    private String companySuffix = "aeycompany.com";
+    private String companySuffix = "vsgoi.com";
 
     // Constructor to receive first name and lastName;
     public EmailMain(String firstName, String lastName)
